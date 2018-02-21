@@ -1,0 +1,33 @@
+<h2>Show Task</h2>
+
+<ul>
+  
+  <li>
+    <strong>Assignee:</strong>
+    <%= @task.user.name %>
+  </li>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @task.title %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @task.description %>
+  </li>
+
+  <li>
+    <strong>Completed:</strong>
+    <%= @task.completed %>
+  </li>
+
+  <li>
+    <strong>Timetaken:</strong>
+    <%= @task.timetaken %>
+  </li>
+
+</ul>
+
+
+<span><%= link "Back", to: "/taskslist" %></span>
